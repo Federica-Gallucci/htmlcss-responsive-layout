@@ -7,7 +7,19 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 img {
@@ -86,7 +98,7 @@ ul {
 
 .btn {
   display: inline-block;
-  padding: 3px 6px;
+  padding: 6px 10px;
   background-color: white;
   border-radius: 45%;
   border: 1px solid white;
@@ -101,8 +113,6 @@ header {
 }
 
 .header-title {
-  font-family: ;
-  font-style: italic;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -144,12 +154,17 @@ main {
   padding-bottom: 10px;
 }
 
+#material .none {
+  display: none;
+}
+
 #material .card {
   padding: 10px 5px;
 }
 
 #material .card-contents {
   background-color: white;
+  padding: 30px;
 }
 
 #material .card-media {
@@ -161,19 +176,61 @@ main {
 #social {
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 #social .none {
   display: none;
 }
 
-/* ICONE SECTION */
-
 /* ADVERTISEMENT SECTION */
+
+#advertisement {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
 
 /* PRESENTATION SECTION */
 
+#presentation {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+#presentation .line {
+  width: 65px;
+  border-bottom: 2px solid #f7972e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#presentation .image-space {
+  padding: 10px 70px;
+}
+
+#presentation .change-space {
+  line-height: 1.5;
+}
 /* FOOTER */
 
 footer {
   background-color: #7c69a4;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.address {
+  padding-top: 5px;
+}
+.links {
+  padding-top: 5px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-around;
 }

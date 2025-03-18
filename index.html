@@ -16,21 +16,39 @@
 
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- LINK PER FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- META TAG RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
-      <div class="header-title">
+      <div class="header-title nerko-one-regular">
         <h1>Giallo Booleano</h1>
       </div>
     </header>
 
-    <main>
+    <main class=".montserrat-uniquifier">
       <div class="container">
         <section id="material">
           <p class="accessories">DOLCI E DESSERT</p>
-          <h2 class="title">Tiramisù</h2>
+          <h2 class="title">
+            Tiramisù <span class="none">(Dolce Tradizionale)</span>
+          </h2>
           <div class="card">
             <div class="card-media">
               <img src="./img/image (10).png" alt="tiramisù" />
@@ -75,14 +93,58 @@
           </button>
         </section>
 
-        <section id="icone"></section>
+        <section id="advertisement">
+          <img src="./img/banner.png" alt="banner" />
+        </section>
 
-        <section id="advertisement"></section>
-
-        <section id="presentation"></section>
+        <section id="presentation">
+          <h2>PRESENTATION</h2>
+          <div class="line"></div>
+          <div>
+            <div class="image-space">
+              <img src="./img/tiramisu.jpg" alt="tiramisù2" />
+            </div>
+            <p class="change-space">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              rerum dolorem dolores dolorum, vero repellendus impedit assumenda
+              iste quam ut ipsam sint voluptatibus temporibus eaque. Rem cumque
+              fuga esse animi. Itaque explicabo ipsam vel voluptatem, dicta
+              harum a eveniet dolore numquam necessitatibus, accusamus nulla
+              exercitationem, fugiat quia labore? Nihil aspernatur cumque
+              expedita doloremque esse, obcaecati exercitationem! Cumque nulla
+              mollitia a? Architecto dolorum labore ipsum, neque totam placeat
+              animi dolor adipisci dolores exercitationem, autem est sed,
+              repudiandae illo? Odio aliquid, voluptatem ullam quibusdam
+              voluptatibus optio nesciunt recusandae hic? Laboriosam, iusto
+              quibusdam. Possimus eligendi accusamus nam deleniti, libero
+              expedita eveniet delectus praesentium, ab unde ea incidunt tempore
+              iusto in fuga non at accusantium rem explicabo quam beatae! Culpa,
+              est atque. Veniam, reiciendis. Veniam ipsum voluptatibus quisquam
+              aliquam rem dolorum necessitatibus ab repellendus velit fuga id in
+              quae impedit ex vel libero non reiciendis, cumque a inventore
+              recusandae. Consectetur minus similique quis excepturi!
+            </p>
+          </div>
+        </section>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="information">
+          <h4>@ 2021 Giallo Booleano S.p.a</h4>
+          <address class="address">
+            Via Tal dei Tali,10 - 88046 Lamezia Terme - VAT 43940293020
+          </address>
+        </div>
+        <div class="links">
+          <nav>About us</nav>
+          <nav>Team of us</nav>
+          <nav>Privacy Policy</nav>
+          <nav>Cookie Policy</nav>
+          <nav>Disclaimer</nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
