@@ -156,20 +156,17 @@ main {
   padding: 30px;
 }
 
-#material .card-media {
-  margin-bottom: 0;
-}
-
 /* SOCIAL SECTION */
 
 #social {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
 #social .none {
   display: none;
+  font-weight: bold;
 }
 
 /* ADVERTISEMENT SECTION */
@@ -212,6 +209,7 @@ footer {
 
 .footer {
   text-align: center;
+  font-size: 8px;
 }
 
 .address {
@@ -221,7 +219,11 @@ footer {
   padding-top: 5px;
   text-decoration: underline;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.left {
+  padding-left: 5px;
 }
 
 /************************************************
@@ -242,6 +244,8 @@ footer {
 
   .container {
     width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   #material .title {
@@ -262,7 +266,7 @@ footer {
   }
 
   #social .btn {
-    padding: 10px 40px;
+    padding: 10px 25px;
     border-radius: 40%;
   }
 
@@ -282,5 +286,52 @@ footer {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  #material .card {
+    display: flex;
+  }
+
+  #material .card-media {
+    width: 100%;
+  }
+
+  #material .lista {
+    width: 100%;
+  }
+
+  #material .card-contents {
+  }
+
+  #social .none {
+    display: flex;
+  }
+
+  #social .btn {
+    margin-left: 5px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information {
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  .links {
+    padding-right: 10px;
   }
 }
