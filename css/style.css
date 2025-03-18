@@ -36,8 +36,8 @@ ul {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* la row manda a capo le righe, la riga deve avere lo stesso margine a destra e a sinistra del container in negativo*/
@@ -46,15 +46,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
   row-gap: 2rem;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 /* quando una classe inizia con col ha il seguente padding */
 
 [class*="col-"] {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .col-1-2 {
@@ -84,6 +84,15 @@ ul {
 }
 */
 
+.btn {
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: white;
+  border-radius: 45%;
+  border: 1px solid white;
+  color: black;
+}
+
 /* HEADER */
 
 header {
@@ -107,7 +116,7 @@ main {
 
 /* MATERIAL SECTION */
 
-/*  per config tablet
+/*  per config tablet lista
 
 .utility { 
   display: flex;
@@ -149,6 +158,10 @@ main {
 
 /* SOCIAL SECTION */
 
+#social {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 #social .none {
   display: none;
 }
