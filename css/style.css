@@ -97,7 +97,7 @@ ul {
 */
 
 .btn {
-  display: inline-block;
+  display: flex;
   padding: 6px 10px;
   background-color: white;
   border-radius: 45%;
@@ -116,6 +116,7 @@ header {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 30px;
 }
 
 /* MAIN */
@@ -125,18 +126,6 @@ main {
 }
 
 /* MATERIAL SECTION */
-
-/*  per config tablet lista
-
-.utility { 
-  display: flex;
-  flex-wrap: wrap;
-} 
-
-.lista {
-  width: calc(100% / 3);
-}
-  */
 
 #material .space {
   padding-top: 10px;
@@ -233,4 +222,65 @@ footer {
   text-decoration: underline;
   display: flex;
   justify-content: space-around;
+}
+
+/************************************************
+               RESPONSIVE
+
+ ************************************************/
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .header-title {
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #material .title {
+    display: flex;
+  }
+
+  #material .none {
+    display: inline;
+  }
+
+  #material .utility {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #material .lista {
+    width: calc(100% / 3);
+  }
+
+  #social .btn {
+    padding: 10px 40px;
+    border-radius: 40%;
+  }
+
+  #advertisement {
+    display: inline;
+    padding-top: 20px;
+  }
+
+  #presentation .image-space {
+    padding: 10px 0px;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  #presentation .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
