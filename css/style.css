@@ -33,7 +33,7 @@ ul {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
@@ -76,14 +76,35 @@ ul {
 .col-1-6 {
   width: calc(100% / 6);
 }
-
+/* 
 .card {
   border: 1px solid black;
   padding: 10px;
+
 }
+*/
 
 /* HEADER */
 
+header {
+  background-color: white;
+  color: #ff9818;
+}
+
+.header-title {
+  font-family: ;
+  font-style: italic;
+  text-align: center;
+}
+
 /* MAIN */
 
+main {
+  background-color: #f6f5f3;
+}
+
 /* FOOTER */
+
+footer {
+  background-color: #7c69a4;
+}
