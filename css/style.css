@@ -195,6 +195,10 @@ main {
   padding: 10px 70px;
 }
 
+#presentation .text-image {
+  padding-top: 20px;
+}
+
 #presentation .change-space {
   line-height: 1.5;
 }
@@ -259,6 +263,7 @@ footer {
   #material .utility {
     display: flex;
     flex-wrap: wrap;
+    line-height: 2;
   }
 
   #material .lista {
@@ -276,8 +281,11 @@ footer {
   }
 
   #presentation .image-space {
-    padding: 10px 0px;
-    width: 400px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 300px;
     float: left;
     margin-right: 20px;
   }
@@ -303,14 +311,18 @@ footer {
   }
 
   #material .card-media {
-    width: 100%;
+    width: 70%;
+  }
+  #material .card-contents {
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 
   #material .lista {
     width: 100%;
-  }
-
-  #material .card-contents {
   }
 
   #social .none {
