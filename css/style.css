@@ -88,21 +88,9 @@ ul {
 .col-1-6 {
   width: calc(100% / 6);
 }
-/* 
-.card {
-  border: 1px solid black;
-  padding: 10px;
 
-}
-*/
-
-.btn {
-  display: flex;
-  padding: 6px 10px;
-  background-color: white;
-  border-radius: 45%;
-  border: 1px solid white;
-  color: black;
+section {
+  margin: 30px 0;
 }
 
 /* HEADER */
@@ -148,25 +136,42 @@ main {
 }
 
 #material .card {
-  padding: 10px 5px;
+  background-color: white;
+  box-shadow: 0 0 4px 1px #00000022;
 }
 
 #material .card-contents {
-  background-color: white;
   padding: 30px;
+}
+
+#material .card .card-media img {
+  display: block;
 }
 
 /* SOCIAL SECTION */
 
-#social {
-  padding-top: 10px;
-  padding-bottom: 20px;
+#social .social-list {
   display: flex;
+
   justify-content: space-between;
 }
 #social .none {
   display: none;
   font-weight: bold;
+}
+
+.social-list li {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 1px #00000022;
+  margin-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* ADVERTISEMENT SECTION */
@@ -237,6 +242,9 @@ footer {
 
 /* TABLET */
 
+@media screen and (min-width: 576x) {
+}
+
 @media screen and (min-width: 768px) {
   .header-title {
     text-align: start;
@@ -270,9 +278,9 @@ footer {
     width: calc(100% / 3);
   }
 
-  #social .btn {
-    padding: 10px 25px;
-    border-radius: 40%;
+  .social-list li {
+    flex-grow: 1;
+    border-radius: 15px;
   }
 
   #advertisement {
@@ -325,12 +333,8 @@ footer {
     width: 100%;
   }
 
-  #social .none {
-    display: flex;
-  }
-
-  #social .btn {
-    margin-left: 5px;
+  #social .social-list li .none {
+    display: inline;
   }
 
   .footer {
